@@ -1,0 +1,28 @@
+<%_
+  TITLE = 'お問い合わせ完了';
+  IS_INDEX = true; 
+  DESCRIPTION = '';
+  KEYWORDS = '';
+  ORIGINALCSS = 'other';
+_%>
+<%- include('../includes/_header') %>
+<main id="other">
+    <section class="cnt-in">
+        <div class="breadcrumb">
+            <a class="breadcrumb__inner" href="./">TOP</a>
+            <a class="breadcrumb__inner" href="./contact.html">お問い合わせ</a>
+            <p class="breadcrumb__inner">お問い合わせ内容の完了</p>
+        </div>
+    </section> 
+
+    <section class="cnt-in-center">
+        <div class="contact-finish-wrap">
+            <p class="summary">お問い合わせありがとうございました。<br>弊社担当者よりご連絡させていただきます。</p>
+            <a href="./" class="btn-link">TOPへ戻る</a>
+            
+        </div>
+    </section>
+
+    <%- include('../includes/_contact') %> 
+</main>
+<%- include('../includes/_footer'); %>

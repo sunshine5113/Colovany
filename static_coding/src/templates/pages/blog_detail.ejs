@@ -1,0 +1,65 @@
+<%_
+  TITLE = 'ブログ詳細';
+  IS_INDEX = true; 
+  DESCRIPTION = '';
+  KEYWORDS = '';
+  ORIGINALCSS = 'other';
+_%>
+    <%- include('../includes/_header') %>
+        <main id="other">
+            <section class="cnt-in">
+                <%- include('../includes/_breadcrumb', {thispage: 'ブログ詳細'}) %>
+            </section>
+
+            <section class="cnt-in-center">
+                <div class="blog-detail-wrap">
+                    <p class="blog-detail-wrap__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+                    <div class="blog-detail-wrap__datecat">
+                        <p class="date">2022/6/30</p>
+                        <p class="cat_rec">リカバリー</p>
+                    </div>
+                    <div class="blog-detail-wrap__content">
+                        <div class="detail__inner">
+                            <p class="detail__inner-subtitle">見出し１テキストテキストテキストテキスト</p>
+                            <p class="detail__inner-content">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+                        <div class="detail__inner flex">
+                            <div class="detail__inner-txt">
+                                <p class="detail__inner-subtitle">見出し2テキストテキストテキストテキスト</p>
+                                <img class="is-sp" src="./assets/img/top/product_05.jpg" alt="">
+                                <p class="detail__inner-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <a href=""><span>詳しくはこちら( https://example/com )</span></a>
+                            </div>
+                            <div class="detail__inner-img">
+                                <img src="./assets/img/top/product_05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail__inner flex">
+                            <div class="detail__inner-img">
+                                <img src="./assets/img/top/product_06.jpg" alt="">
+                            </div>
+                            <div class="detail__inner-txt">
+                                <p class="detail__inner-subtitle">見出し3テキストテキストテキストテキスト</p>
+                                <img class="is-sp" src="./assets/img/top/product_06.jpg" alt="">
+                                <p class="detail__inner-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                    テキストテキストテキストテキストテキストテキストテキストテキ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-detail-wrap__bottom">
+                        <ul>
+                            <li>箇条書きのリスト１テキストテキストテキストテキスト</li>
+                            <li>箇条書きのリスト１テキストテキストテキストテキスト</li>
+                            <li>箇条書きのリスト１テキストテキストテキストテキスト</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <%- include('../includes/_contact') %>
+        </main>
+        <%- include('../includes/_footer'); %>

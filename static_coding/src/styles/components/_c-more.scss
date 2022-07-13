@@ -1,0 +1,80 @@
+.more-wrap{
+    padding-bottom: 67px;
+    display: none;
+    transition: all 0.35s ease;
+    &.active{
+        display: block;
+    }
+    @include media-sp{
+        padding-bottom: 30px;
+    }
+    &__inner{
+        padding: 30px 0;
+        border-bottom: solid 1px #1a1f2633;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        &_img{
+            width: 285px;
+            @include media-pc-sm{
+                width: 225px;
+            }
+            @include media-sp{
+                width: 100%;
+                margin-top: 30px;
+            }
+            img{
+                margin-bottom: 15px;
+                @include media-sp{
+                    margin-bottom: 16px;
+                }
+            }
+            h6{
+                font-size: 13px;
+                font-weight: bold;
+                color: $purple-l-color;
+                line-height: 1.8;
+            }
+            p.des_01{
+                font-size: 13px;
+                color: $purple-l-color;
+                margin-top: 6px;
+                line-height: 1.8;
+            }
+            p.des_02{
+                font-size: 12px;
+                color: $purple-l-color;
+                margin-top: 10px;
+                line-height: 1.8;
+            }
+
+        }
+        &_txt{
+            width: calc(100% - 355px);
+            @include media-pc-sm{
+                width: calc( 100% - 260px);
+            }
+            @include media-sp{
+                width: 100%;
+            }
+            h5{
+                font-size: 16px;
+                color: $purple-l-color;
+                font-weight: bold;
+                line-height: 2;
+                @include media-sp{
+                    font-size: 14px;
+                }
+            }
+            p{
+                font-size: 14px;
+                color: $purple-l-color;
+                margin-top: 14px;
+                line-height: 2;
+                @include media-sp{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

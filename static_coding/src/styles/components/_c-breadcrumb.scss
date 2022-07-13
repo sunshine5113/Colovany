@@ -1,0 +1,35 @@
+.breadcrumb{
+    padding: 24px 0;
+    display: flex;
+    @include media-sp{
+        padding: 30px 0;
+    }
+    a{
+        font-size: 13px;
+        color: #52667C;
+        text-decoration: underline;
+        @include media-sp{
+            font-size: 11px;
+        }
+    }
+    p{
+        font-size: 13px;
+        color: $main-color;
+        @include media-sp{
+            font-size: 11px;
+        }
+    }
+    &__inner{
+        &:not(:first-child){
+            padding-left: 37px;
+            position: relative;
+            &::before{
+                content: url(../img/common/arrow_right.svg);
+                position: absolute;
+                left: 15.6px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

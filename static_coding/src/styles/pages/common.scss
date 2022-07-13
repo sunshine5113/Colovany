@@ -1,0 +1,14 @@
+@import '../config';
+@import '../mixins/**';
+@import '../layouts/l-common';
+@import '../components/c-btn';
+@import '../components/c-hover';
+@import '../components/c-header';
+@import '../components/c-footer';
+@import '../components/c-contact';
+@import '../components/c-title';
+@import '../components/c-gallery';
+
+p, h1, h2, h3, h4, h5, h6{
+    font-family: $main-font;
+}

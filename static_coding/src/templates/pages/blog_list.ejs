@@ -1,0 +1,86 @@
+<%_
+  TITLE = 'ブログ一覧';
+  IS_INDEX = true; 
+  DESCRIPTION = '';
+  KEYWORDS = '';
+  ORIGINALCSS = 'other';
+_%>
+    <%- include('../includes/_header') %>
+        <main id="other">
+            <section class="cnt-in">
+                <%- include('../includes/_breadcrumb', {thispage: 'ブログ一覧'}) %>
+            </section>
+            <section class="cnt-in-center">
+                <div class="mv-wrap__02 company">
+                    <h6>Blog list</h6>
+                    <h2>ブログ一覧</h2>
+                    <p class="pos__inner">Blog list</p>
+                </div>
+            </section>
+
+            <section class="cnt-in-center">
+                <div class="blog-list-wrap">
+                    <div class="blog-list-wrap__btn">
+                        <a class="btn__inner active" href="">全て</a>
+                        <a class="btn__inner" href="">リカバリー</a>
+                        <a class="btn__inner" href="">アクティブ</a>
+                    </div>
+                    <div class="blog-list-wrap__blog">
+                        <% for (var i = 0; i< 3 ; i++) {%>
+                            <div class="blog__inner">
+                                <a class="blog__inner-img" href="">
+                                    <img src="./assets/img/top/product_05.jpg" alt="blog">
+                                </a>
+                                <div class="blog__inner-cat">
+                                    <p class="cat_rec">リカバリー</p>
+                                    <p class="cat_act">アクティブ</p>
+                                </div>
+                                <a href="" class="blog__inner-title">
+                                タイトルが入りますタイトルが入ります
+                            </a>
+                                <p class="blog__inner-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…</p>
+                            </div>
+                            <div class="blog__inner">
+                                <a class="blog__inner-img" href="">
+                                    <img src="./assets/img/top/product_06.jpg" alt="blog">
+                                </a>
+                                <div class="blog__inner-cat">
+                                    <p class="cat_rec">リカバリー</p>
+                                    <p class="cat_act">アクティブ</p>
+                                </div>
+                                <a href="" class="blog__inner-title">
+                                タイトルが入りますタイトルが入ります
+                            </a>
+                                <p class="blog__inner-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…</p>
+                            </div>
+                            <div class="blog__inner">
+                                <a class="blog__inner-img" href="">
+                                    <img src="./assets/img/top/product_07.jpg" alt="blog">
+                                </a>
+                                <div class="blog__inner-cat">
+                                    <p class="cat_rec">リカバリー</p>
+                                    <p class="cat_act">アクティブ</p>
+                                </div>
+                                <a href="" class="blog__inner-title">
+                                タイトルが入りますタイトルが入ります
+                            </a>
+                                <p class="blog__inner-content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…</p>
+                            </div>
+                            <% } %>
+                    </div>
+                    <div class="blog-list-wrap__pagination">
+                        <a class="prev" href="">&lt;&nbsp;前へ</a>
+                        <a class="page" href="">1</a>
+                        <a class="page" href="">2</a>
+                        <a class="page active" href="">3</a>
+                        <p class="skip" href="">⋯</p>
+                        <a class="page" href="">9</a>
+                        <a class="next" href="">次へ&nbsp;&gt;</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <%- include('../includes/_contact') %>
+        </main>
+        <%- include('../includes/_footer'); %>

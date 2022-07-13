@@ -1,0 +1,121 @@
+.accordion__inner{
+    &:not(:first-child){
+        margin-top: 40px;
+        @include media-sp{
+            margin-top: 20px;
+        }
+    }
+    .accordion {
+        background-color: #F4F6FB;
+        height: 68px;
+        color: $purple-l-color;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 100px 0 108px;
+        width: 100%;
+        line-height: 1.5;
+        text-align: left;
+        @include media-sp{
+            height: auto;
+            font-size: 14px;
+            padding: 12px 44px;
+        }
+        &::before{
+            content: "Q";
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            background: #1E2D59;
+            color: white;
+            width: 68px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: -1px;
+            @include media-sp{
+                width: 34px;
+                font-size: 17px;
+            }
+        }
+        &::after{
+            content: url(../img/common/arrow_down.svg);
+            position: absolute;
+            right: 40px;
+            top: 24px;
+            transition: all 0.35s ease;
+            @include media-sp{
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &.active::after{
+            transform: rotate(180deg);
+            @include media-sp{
+                transform: translateY(-50%);
+                content: url(../img/common/arrow_top.svg);
+            }
+        }
+      }
+      .panel {
+        max-height: 0;
+        overflow-y: hidden;
+        margin-top: 0;
+        padding: 0;
+        transition: all 0.35s ease;
+        position: relative;
+        p{
+            padding: 8px 40px 8px 92px;
+            font-size: 14px;
+            color: $purple-l-color;
+            line-height: 2;
+            position: relative;
+            min-height: 68px;
+            a{
+                line-height: 2;
+                text-decoration: underline;
+                color: $purple-l-color;
+            }
+            @include media-sp{
+                font-size: 12px;
+                padding: 0 20px 0 44px;
+                min-height: 44px;
+            }
+            &::before{
+                content: "A";
+                width: 66px;
+                height: 66px;
+                border: solid 1px #1E2D59;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 600;
+                font-size: 28px;
+                color: #1E2D59;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include media-sp{
+                    width: 32px;
+                    height: 42px;
+                    font-size: 17px;
+                }
+            }
+        }
+        
+        &.active{
+            max-height: max-content;
+            margin-top: 32px;
+            @include media-sp{
+                margin-top: 20px;
+            }
+        }
+      }
+}

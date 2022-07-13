@@ -1,0 +1,97 @@
+.title-common{
+    &__01{
+        p.en{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 80px;
+            color: $main-color;
+            font-weight: 600;
+            span{
+                color: #F68D2E;
+            }
+            @include media-sp{
+                font-size: 50px;
+            }
+        }
+        p.jp{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 14px;
+            @include media-sp{
+                font-size: 15px;
+            }
+        }
+    }
+    &__02{
+        p.en{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 50px;
+            color: $main-color;
+            font-weight: 600;
+            span{
+                color: #F68D2E;
+            }
+            @include media-sp{
+                font-size: 38px;
+            }
+        }
+        p.jp{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 14px;
+            @include media-sp{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.title-order{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include media-sp{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    &.recovery{
+        p.num{
+            color: #1E2D59;
+        }
+    }
+    &.active{
+        p.num{
+            color: #F68D2E;
+        }
+    }
+    p.num{
+        font-size: 62px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        @include media-sp{
+            font-size: 38px;
+        }
+    }
+    p.tlt{
+        color: $purple-l-color;
+        font-size: 28px;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-bottom: 12px;
+        @include media-sp{
+            padding-left: 0;
+            font-size: 17px;
+            padding: 8px 0 14px 0;
+        }
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background-color: $purple-l-color;
+        bottom: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,144 @@
+<%_
+  TITLE = 'お問い合わせ';
+  IS_INDEX = true; 
+  DESCRIPTION = '';
+  KEYWORDS = '';
+  ORIGINALCSS = 'other';
+_%>
+<%- include('../includes/_header') %>
+<main id="other">
+    <section class="cnt-in">
+        <%- include('../includes/_breadcrumb', {thispage: 'お問い合わせ'}) %>
+    </section> 
+    <section class="cnt-in-center">
+        <div class="mv-wrap__02 company">
+            <h6>Contact</h6>
+            <h2>お問い合わせ</h2>
+            <p class="pos__inner">Contact</p>
+        </div>
+    </section>
+
+    <section class="cnt-in-center">
+        <div class="contact-input-wrap">
+            <p class="summary">下記フォームに必要事項を入力の上、送信してください。<br><span class="require">必須</span> は入力必須の項目です。</p>
+            <div class="fw-02">
+                <div class="fw-02__inner">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">お問い合わせ内容</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <div class="_radio">
+                            <input type="radio" id="recovery" name="contact_content" checked>
+                            <label for="recovery">コロバニィⓇリカバリーについて</label>
+                        </div>
+                        <div class="_radio">
+                            <input type="radio" id="active" name="contact_content" checked>
+                            <label for="active">コロバニィⓇリカバリーについて</label>
+                        </div>
+                        <div class="_radio">
+                            <input type="radio" id="_other" name="contact_content" checked>
+                            <label for="_other">コロバニィⓇリカバリーについて</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">会社名・店舗名</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="text" name="company_name" placeholder="〇〇株式会社">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">ご担当者名</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="text" name="charge" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">メールアドレス</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="email" name="company_name" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01">御社HP</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="text" name="company_hp" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">郵便番号</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_02" type="number" name="company_name" placeholder="1234567">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01">ご住所</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_03" type="text" name="company_hp" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">電話番号</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="number" name="charge" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01">FAX番号</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <input class="input_01" type="text" name="charge" placeholder="サンプルテキスト">
+                    </div>
+                </div>
+                <div class="fw-02__inner center">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01">何をご覧になり当HPへ<br>来られましたか？</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <select id="reason">
+                            <option value="hide">パンフレット</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                            <option value="サンプル">サンプル</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fw-02__inner">
+                    <div class="fw-02__inner_first">
+                        <p class="des_01 require">ご相談内容</p>
+                    </div>
+                    <div class="fw-02__inner_second">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="サンプルテキスト"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="agree__inner">
+                <a href="">プライバシーポリシー</a>
+                <p>を確認し、同意しました。 </p>
+            </div>
+            <a href="./contact_confirm.html" class="btn-link">確認画面へ</a>
+        </div>
+    </section>
+
+    <%- include('../includes/_contact') %> 
+</main>
+<%- include('../includes/_footer'); %>
