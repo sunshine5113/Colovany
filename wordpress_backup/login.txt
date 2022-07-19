@@ -1,0 +1,6 @@
+ID : colovany
+PASS : centrum
+
+
+user : centrum-admin
+pass : gryfpUQ55V3J
