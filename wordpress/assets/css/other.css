@@ -2685,48 +2685,50 @@
     }
 }
 
-#other .blog-list-wrap__pagination .prev,
-#other .blog-list-wrap__pagination .next {
+#other .blog-list-wrap__pagination .previouspostslink,
+#other .blog-list-wrap__pagination .nextpostslink {
     color: #1e2d59;
     font-weight: bold;
     font-size: 16px;
     line-height: 1;
     font-family: "Noto Sans JP", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    border: none;
 }
 
 @media screen and (max-width: 767px) {
-    #other .blog-list-wrap__pagination .prev,
-    #other .blog-list-wrap__pagination .next {
+    #other .blog-list-wrap__pagination .previouspostslink,
+    #other .blog-list-wrap__pagination .nextpostslink {
         font-size: 14px;
     }
 }
 
-#other .blog-list-wrap__pagination .prev:hover,
-#other .blog-list-wrap__pagination .next:hover {
+#other .blog-list-wrap__pagination .previouspostslink:hover,
+#other .blog-list-wrap__pagination .nextpostslink:hover {
     opacity: 0.9;
 }
 
-#other .blog-list-wrap__pagination .prev {
+#other .blog-list-wrap__pagination .previouspostslink {
     margin-right: 30px;
 }
 
 @media screen and (max-width: 767px) {
-    #other .blog-list-wrap__pagination .prev {
+    #other .blog-list-wrap__pagination .previouspostslink {
         margin-right: 20px;
     }
 }
 
-#other .blog-list-wrap__pagination .next {
+#other .blog-list-wrap__pagination .nextpostslink {
     margin-left: 30px;
 }
 
 @media screen and (max-width: 767px) {
-    #other .blog-list-wrap__pagination .next {
+    #other .blog-list-wrap__pagination .nextpostslink {
         margin-left: 20px;
     }
 }
 
-#other .blog-list-wrap__pagination .page {
+#other .blog-list-wrap__pagination .page,
+#other .blog-list-wrap__pagination .current {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2743,14 +2745,15 @@
 }
 
 @media screen and (max-width: 767px) {
-    #other .blog-list-wrap__pagination .page {
+    #other .blog-list-wrap__pagination .page,
+    #other .blog-list-wrap__pagination .current {
         width: 30px;
         height: 30px;
         font-size: 13px;
     }
 }
 
-#other .blog-list-wrap__pagination .page.active {
+#other .blog-list-wrap__pagination .current {
     background-color: #1E2D59;
     color: white;
 }
@@ -2835,10 +2838,27 @@
     color: white;
     font-weight: bold;
     font-size: 14px;
+    margin-right: 5px;
+}
+
+#other .blog-detail-wrap__datecat .cat_act {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 4px 6px;
+    background: #F68D2E;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 767px) {
-    #other .blog-detail-wrap__datecat .cat_rec {
+    #other .blog-detail-wrap__datecat .cat_rec,
+    #other .blog-detail-wrap__datecat .cat_act {
         font-size: 12px;
     }
 }
@@ -2998,4 +3018,17 @@
     #other .blog-detail-wrap__bottom ul li {
         font-size: 12px;
     }
+}
+
+
+/* custom css */
+
+.blog-list-wrap__pagination .wp-pagenavi .pages {
+    display: none;
+}
+
+.blog-list-wrap__pagination .wp-pagenavi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
